@@ -44,7 +44,7 @@ final class Nightscout_Menu_Bar_Tests: XCTestCase {
             let expectedResult:Double = keyValue.value
             
             
-            let n = helpers().convertbgMgToMmol(bgMg: mg);
+            let n = helpers().convertbgMgToMmol(bgMg: Double(mg));
             print(n);
             print(String(expectedResult));
             XCTAssertEqual(n, expectedResult);

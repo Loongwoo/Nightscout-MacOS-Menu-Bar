@@ -9,9 +9,9 @@ import Foundation
 import SystemConfiguration
 
 class helpers {
-    func convertbgMgToMmol(bgMg: Int) -> Double {
+    func convertbgMgToMmol(bgMg: Double) -> Double {
         //Round mmol to 1dp
-        let bgMmol = (Double(bgMg)/18.018018*10).rounded()/10;
+        let bgMmol = (bgMg/18.018018*10).rounded()/10;
         return bgMmol;
     }
     

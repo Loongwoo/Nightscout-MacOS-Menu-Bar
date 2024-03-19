@@ -11,7 +11,7 @@ import SwiftUI
 struct Entry: Identifiable {
     let id = UUID()
     var time: Date
-    var bgMg: Int
+    var bgMg: Double
     var bgMmol: Double
     var direction: String
 

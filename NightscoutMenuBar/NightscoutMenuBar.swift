@@ -134,7 +134,7 @@ func addRawEntry(rawEntry: String) {
     let entryArr = rawEntry.components(separatedBy: "\t") as [String]
     if entryArr.count > 2 {
         if let epochTimeMilliseconds = Double(entryArr[1]),
-           let bgMg = Int(entryArr[2]) {
+           let bgMg = Double(entryArr[2]) {
             let epochTimeSeconds = epochTimeMilliseconds / 1000.0
             let time = Date(timeIntervalSince1970: epochTimeSeconds)
             
